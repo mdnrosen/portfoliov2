@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.155a827c.chunk.css",
+    "main.js": "/static/js/main.5ebcbb29.chunk.js",
+    "main.js.map": "/static/js/main.5ebcbb29.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.679c150a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.679c150a.js.map",
+    "static/js/2.2417579c.chunk.js": "/static/js/2.2417579c.chunk.js",
+    "static/js/2.2417579c.chunk.js.map": "/static/js/2.2417579c.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.c538ff5e593589398d6f5f45fb98bb3f.js": "/precache-manifest.c538ff5e593589398d6f5f45fb98bb3f.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.155a827c.chunk.css.map": "/static/css/main.155a827c.chunk.css.map",
+    "static/js/2.2417579c.chunk.js.LICENSE": "/static/js/2.2417579c.chunk.js.LICENSE",
+    "static/media/benStokesLogo.png": "/static/media/benStokesLogo.dffd2fd5.png",
+    "static/media/indianaHamesLogo.png": "/static/media/indianaHamesLogo.2d9b09b1.png",
+    "static/media/playerConnectLogo.png": "/static/media/playerConnectLogo.d630abcb.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.679c150a.js",
+    "static/js/2.2417579c.chunk.js",
+    "static/css/main.155a827c.chunk.css",
+    "static/js/main.5ebcbb29.chunk.js"
+  ]
+}
