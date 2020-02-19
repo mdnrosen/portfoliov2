@@ -1,0 +1,327 @@
+$myRed: #9A3B37;
+$background: #222222;
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Sorts Mill Goudy', serif;
+  color: #F5F5F5;
+}
+
+.spinner {
+  height: 100px;
+  width: 100px;
+  border-top: 10px solid $myRed;
+  border-right: 10px solid $background;
+  border-left: 10px solid $background;
+  border-bottom: 10px solid $myRed;
+}
+
+
+
+
+.highlight {
+  color: $myRed;
+}
+
+
+.App {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #222222;
+  overflow: hidden;
+  :nth-child(2) {
+    align-self: center;
+    justify-self: center;
+  }
+  .Nav {
+    margin: 2rem auto;
+  }
+}
+
+.Intro {
+  height: 75%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  .name {
+    font-size: 2.7em;
+  }
+  .dev {
+    font-size: 2.2em;
+  }
+
+  .nav {
+    height: 30%;
+  }
+  .jobTitle {
+    font-size: 1.5em;
+    text-transform: lowercase;
+  }
+
+  .button {
+    display: flex;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 40%;
+    transition: 0.3s;
+  }
+  .button:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    i {
+      color: $myRed;
+      margin-right: 5px;
+    }
+  }
+}
+
+
+.Skills {
+  height: 75%;
+  margin: 0;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+.skillCardWrapper {
+  margin: 0 auto;
+  height: 70%;
+  width: 55%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+  @media only screen and (max-width: 600px){
+    width: 98%;
+    height: 80%;
+    flex-direction: row;
+  }
+
+  .skillCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    border-bottom: 1px solid $myRed;
+    @media only screen and (max-width: 700px){
+      width: 75%;
+      padding: 2px;
+      margin: 5px;
+    }
+    .skillTitle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: max-content;
+      width: 100%;
+      .icon {
+        font-size: 2em;
+      }
+      .name {
+        font-size: 1.4em;
+      }
+    }
+  }
+}
+
+
+
+.Nav {
+  width: 50%;
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.4em;
+
+    a {
+      text-decoration: none;
+      transition: 0.2s;
+    }
+    a:hover {
+      color: $myRed;
+
+      transition: 0.2s;
+    }
+  }
+}
+
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.Contact {
+  height: 60%;
+  margin: 0;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  .containsInfo {
+    height: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .contactCard {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 40%;
+      border-bottom: 1px solid $myRed;
+      transition: 0.2s;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 1.2rem;
+      }
+      i {
+        font-size: 1.6rem;
+        margin-bottom: 0px;
+      }
+
+    }
+    .contactCard:hover{
+      transition: 0.2s;
+      .icon {
+      animation: jump 0.5s ease-in-out;
+      i {
+        color: $myRed;
+
+      }
+
+      }
+
+    }
+  }
+}
+
+.Portfolio {
+  height: 70%;
+  margin: 0;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  .button {
+    height: 15%;
+    width: 40px;
+    background: none;
+    outline: none;
+    border: none;
+    i {
+      font-size: 2rem;
+      color: #F5F5F5;
+    }
+
+  }
+
+  .Card {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    .spinnerContainer {
+      background-color: #222222;
+      height: 12rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 12rem;
+      border-radius: 5px;
+    }
+  .imgContainer {
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12rem;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    img {
+      width: 95%;
+    }
+  }
+  .detailContainer {
+    padding-top: 20px;
+
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid $myRed;
+    h3 {
+      margin: 10px;
+    }
+    .containsLinks {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      a {
+        margin: 0 5px;
+      }
+    }
+  }
+}
+
+
+
+}
+  .Bio {
+
+    height: 60%;
+    margin: 0;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    h4 {
+      .linkFromBio {
+        text-decoration: none;
+        color: $myRed;
+      }
+
+    }
+  }
