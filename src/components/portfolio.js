@@ -41,7 +41,9 @@ class Portfolio extends React.Component{
         return(
             <div className="Portfolio"> 
                 <button className="button" disabled={project.index === 0} onClick={this.arrowPrevious}>
-                    <i className="fas fa-chevron-left"></i>    
+                    <i 
+                        className="fas fa-chevron-left"
+                    ></i>    
                 </button>
                 
                 <Card project={project}/>

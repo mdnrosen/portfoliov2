@@ -40,6 +40,13 @@ $background: #222222;
   }
   .Nav {
     margin: 2rem auto;
+    .desktop {
+      display: flex;
+      @media screen and (max-width: 650px) {
+        display: none;
+      }
+    }
+
   }
 }
 
@@ -89,6 +96,10 @@ $background: #222222;
   height: 75%;
   margin: 0;
   width: 75%;
+  @media screen and (max-width: 650px) {
+    width: 100%;
+    height: 80%;
+  }
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -188,6 +199,10 @@ $background: #222222;
   height: 60%;
   margin: 0;
   width: 75%;
+  @media screen and (max-width: 650px) {
+    width: 100%;
+    height: 75%;
+  }
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -238,6 +253,10 @@ $background: #222222;
   height: 70%;
   margin: 0;
   width: 50%;
+  @media screen and (max-width: 650px) {
+    width: 100%;
+    height: 80%;
+  }
   display: flex;
   align-items: center;
   .button {
@@ -251,6 +270,9 @@ $background: #222222;
       color: #F5F5F5;
     }
 
+  }
+  .button:disabled {
+    opacity: 0;
   }
 
   .Card {
@@ -312,6 +334,11 @@ $background: #222222;
     height: 60%;
     margin: 0;
     width: 40%;
+    @media screen and (max-width: 650px) {
+      width: 100%;
+      height: 75%;
+      padding: 20px;
+    }
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -325,3 +352,71 @@ $background: #222222;
 
     }
   }
+
+
+
+  .burgerMenu {
+    display: none;
+  }
+
+  @media screen and (max-width: 650px) {
+    .burgerMenu {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin-top: 20px;
+      margin-right: 20px;
+
+    }
+    .desktop {
+      display: none;
+    }
+  }
+
+
+  .MobileNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 100;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.9);
+
+    .closeButton {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin-top: 20px;
+      margin-right: 20px;
+    }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        padding: 20px;
+        width: 100%;
+        height: 80%;
+        font-size: 1.4em;
+    
+        a {
+          text-decoration: none;
+          transition: 0.2s;
+          border-bottom: 1px solid $myRed;
+        }
+        a:hover {
+          color: $myRed;
+    
+          transition: 0.2s;
+        }
+      }
+  }
+
